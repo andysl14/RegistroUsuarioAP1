@@ -41,13 +41,12 @@ namespace RegistroUsuario
         {
             bool esValido = true;
 
-            if (NombreTextBox.Text.Length == 0)
+            if (NombreTextBox.Text.Length == 0 || UsuarioIdTextBox.Text.Length == 0 || ClaveTextBox.Text.Length == 0)
             {
                 esValido = false;
-                MessageBox.Show("Transaccion Fallida", "Fallo",
+                MessageBox.Show("Hay campos vacíos, vuelva a intentarlo", "Fallo",
                     MessageBoxButton.OK, MessageBoxImage.Warning);
             }
-
             return esValido;
         }
 
