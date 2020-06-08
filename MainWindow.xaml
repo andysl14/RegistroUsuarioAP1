@@ -13,8 +13,8 @@
                 <Label Content="Usuario Id:" />
 
                 <StackPanel Orientation="Horizontal" >
-                    <TextBox x:Name="UsuarioIdTextBox" Text="{Binding EstudianteId}" Width="100"  Height="18" />
-                    <Button x:Name="BuscarButton" Margin="5,0" Click="BuscarButton_Click">
+                    <TextBox x:Name="UsuarioIdTextBox" Text="{Binding UsuarioId}" Width="100"  Height="18" />
+                    <Button x:Name="BuscarButton" Margin="10,0" Click="BuscarButton_Click" Height="26">
                         <StackPanel Orientation="Horizontal" Height="20">
                             <Image Source="/Resources/lens.png" Height="15"/>
                             <Label Content="Buscar" />
